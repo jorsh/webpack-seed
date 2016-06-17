@@ -26,9 +26,9 @@ module.exports = {
     module:{
         preLoaders: [
             {
-                test: /\.js$/,
+                test: /(\.js$|\.jsx$)/,
                 exclude: /node_modules/,
-                loader: 'jshint-loader'
+                loader: 'eslint-loader'
             }
         ],
 
@@ -37,7 +37,7 @@ module.exports = {
             exclude: /node_modules/,
             loader: 'babel',
             query: {
-                presets: ['es2015']
+                presets: ['es2015', 'react']
             }
         },
         {
@@ -53,8 +53,8 @@ module.exports = {
         ]
     },
 
-    jshint: {
-        esversion: 6
+    eslint: {
+        configFile: '.eslintrc'
     },
 
     plugins: [HtmlWebpackPluginConfig]

@@ -1,9 +1,16 @@
-## Install
+# Webpack Seed
 
-```markdown
-npm install
+## Clone and Install
+
+```
+> git clone git@github.com:jorsh/webpack-seed.git
+> cd webpack-seed
+> npm install
 ```
 
-Useful Links:
-- https://www.npmjs.com/package/jshint-loader
-- https://github.com/ampedandwired/html-webpack-plugin
+## Inserting images
+```
+const imgElement = document.createElement('img');
+imgElement.src = require('./images/webpack.png');
+document.body.appendChild(imgElement);
+```

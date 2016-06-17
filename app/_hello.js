@@ -1,6 +1,9 @@
-var exportThis = function (name) {
-    const greet = document.getElementById('greet');
-    greet.innerHTML = 'Hello' + name;
-};
+import React from 'react';
 
-module.exports = exportThis;
+export default props => (
+    <h2>
+        Hello {props.name}
+    </h2>
+);
+
+

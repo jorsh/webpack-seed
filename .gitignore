@@ -7,3 +7,4 @@ gen
 # Project folders
 /node_modules/
 /dist/
+/.idea/
